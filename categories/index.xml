@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Global City Team Challenge</title>
+    <link>https://pages.nist.gov/GCTC/categories/index.xml</link>
+    <description>Recent content on Global City Team Challenge</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2016 - 2017, Global City Team Challenge all rights reserved.</copyright>
+    <atom:link href="https://pages.nist.gov/GCTC/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Action Clusters</title>
+      <link>https://pages.nist.gov/GCTC/action-clusters/</link>
+      <pubDate>Thu, 06 Apr 2017 09:56:37 -0400</pubDate>
+      
+      <guid>https://pages.nist.gov/GCTC/action-clusters/</guid>
+      <description>&lt;p&gt;There are more than 300 organizations participating in GCTC smart city technology projects, called Action Clusters. These participants include representatives from U.S. cities and states, major cities in other countries, government agencies, private companies, non-profits, universities, hospitals, and a variety of municipal-focused organizations. (More information to be added soon.)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

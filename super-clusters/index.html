@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>SuperClusters</title>
+
+  <meta name="author" content="" />
+  <meta name="keywords" content="">
+
+  
+
+  <meta name="generator" content="Hugo 0.19" />
+  
+  <link href="https://pages.nist.gov/cpspwg/static/css/nist_github_header.css" type="text/css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:100,400,400i,700,900" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+  
+  <link href="https://pages.nist.gov/GCTC/css/animate.css" rel="stylesheet"> 
+  <link href="https://pages.nist.gov/GCTC/css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+  <link href="https://pages.nist.gov/cpspwg/static/css/nist_github_header.css" type="text/css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+
+  <link rel="shortcut icon" href="https://pages.nist.gov/GCTC/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="https://pages.nist.gov/GCTC/img/apple-touch-icon.png" />
+  
+  <link rel="alternate" href="https://pages.nist.gov/index.xml" type="application/rss+xml" title="Global City Team Challenge">
+
+  
+  <meta property="og:title" content="SuperClusters" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/GCTC/super-clusters//" />
+  <meta property="og:image" content="img/logo.png" />
+  <link href="../css/jquery.dataTables.min.css" rel="stylesheet">
+  <link href="../css/jquery.dataTables.yadcf.css" rel="stylesheet">
+
+<script src="../js/handlebars-v4.0.10.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script src="../js/tabletop.js"></script>
+
+<script src="../js/underscore.js"></script>
+  
+<style type="text/css">
+.col-md-6 button {margin-top:5px;}
+
+.imageWrap {
+    display: table-cell;
+    width: 273px;
+    vertical-align: top;
+    overflow: hidden;
+    margin: 0 20px 20px 0;
+    border: 1px solid #ccc;
+    padding: 10px;
+	float: left;
+    height: 359px;
+}
+#superclusters .imageWrap img {
+    max-width: 250px;
+}
+.clusterBlock {
+    border: 1px solid #eee;
+    padding: 20px;
+    background: #f7f5f5;
+	margin:20px 0 40px 0;
+}
+#Superclusters > p{margin-bottom:40px;}
+button.placeholder {cursor:default;border:1px solid #ddd;}
+button.placeholder:hover {border-color:#ddd;outline:none;}
+</style>  
+
+</head>
+
+
+  <body id="superclusters">
+
+    <div id="all">
+
+        <header>
+
+              <header class="nist-header">
+	<h1>
+	  <a class="nist-logo" href="http://www.nist.gov/cps" title="Go to nist.gov">National Institute of Standards and Technology</a>
+	</h1>
+	<div class="nist-links">
+	  <a class="nist-links-button" href="http://www.nist.gov">NIST Website</a>
+	  <a class="nist-links-button mobile-hide" href="http://www.nist.gov/public_affairs/nandyou.cfm">About NIST</a>
+	  <a class="nist-links-button mobile-hide" href="https://github.com/usnistgov">usnistgov on Github</a>
+	</div>
+</header>
+	
+	<div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="https://pages.nist.gov/GCTC/">
+                    <img src="https://pages.nist.gov/GCTC/img/GCTC_logo_344x80.png" alt="SuperClusters logo" class="hidden-xs hidden-sm">
+                    <img src="https://pages.nist.gov/GCTC/img/GCTC_logo-small.png" alt="SuperClusters logo" class="visible-xs visible-sm">
+                    <span class="sr-only">SuperClusters - go to homepage</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                      <span class="sr-only">Toggle Navigation</span>
+                        <i class="fa fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/GCTC/">Home</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      
+                        <li><a href="/GCTC/about/the-gctc">The GCTC</a></li>
+                      
+                        <li><a href="/GCTC/about/participation-guide">Participation Guide</a></li>
+                      
+                        <li><a href="/GCTC/about/partners/">Partners</a></li>
+                      
+                    </ul>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      
+                        <li><a href="/GCTC/event/gctc-expo-2017">GCTC EXPO 2017</a></li><li><a href="/GCTC/event/gctc-kickoff-2018">GCTC Kickoff 2018</a></li>
+                      
+                    </ul>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/GCTC/super-clusters/">SuperClusters</a>
+                    
+                  </li>
+                  
+                   <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Action Clusters <span class="caret"></span></a>                    
+                    <ul class="dropdown-menu">                      
+                        <li><a href="/GCTC/action-clusters-2018/">2018</a></li><li><a href="/GCTC/action-clusters-2017/">2017</a></li>                      
+                        <li><a href="/GCTC/action-clusters-2016/">2016</a></li>                      
+                    </ul>                    
+                  </li>
+<li class="dropdown"><a href="/GCTC/news/">News</a> </li>
+                  
+                </ul>
+            </div>
+            
+
+            <div class="collapse clearfix" id="search">
+
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+
+                </span>
+                    </div>
+                </form>
+
+            </div>
+            
+
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+        </header>
+
+        <div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>SuperClusters</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div id="content">
+            
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div id="Superclusters" class="handlebars"></div>
+							<script id="cat-template" type="text/x-handlebars-template">
+								
+								{{#if Header}}<p>{{enhance Header}}</p>{{/if}}
+								<div class="clusterBlock">								
+									<div class="row">
+										<div class="col-md-8">
+											<h2 style="margin-top:0;">{{Cluster-Title}}</h2>
+										</div>
+										<div class="col-md-4">
+											{{#if Blueprint}}
+											<button class="pull-right"><a href="{{Blueprint}}" target="_blank">Download The Blueprint</a></button>
+											{{else}}
+											<button class="pull-right placeholder">Blueprint Coming Soon</button>
+											{{/if}}
+										</div>
+									</div>
+									
+									<p>{{enhance Cluster-Main-Text}}</p>
+									<h3>{{Chair}}:</h3>
+									{{#if Chair1-Image}} 
+										<div class="imageWrap">
+										<img src="images/{{Chair1-Image}}"><br>											
+										{{#if Chair1-Name-Title-Company}} 
+											{{Chair1-Name-Title-Company}} 
+										{{/if}}
+										</div>
+										{{else}}
+										<p>To Be Elected by the Leadership Team</p>
+									{{/if}}
+									{{#if Chair2-Image}} 
+										<div class="imageWrap">
+										<img src="images/{{Chair2-Image}}"><br>											
+										{{#if Chair2-Name-Title-Company}} 
+											{{Chair2-Name-Title-Company}} 
+										{{/if}}
+										</div>
+									{{/if}}
+									{{#if Chair3-Image}} 
+										<div class="imageWrap">
+										<img src="images/{{Chair3-Image}}"><br>											
+										{{#if Chair3-Name-Title-Company}} 
+											{{Chair3-Name-Title-Company}} 
+										{{/if}}
+										</div>
+									{{/if}}
+									
+									{{#if Chair4-Image}} 
+										<div class="imageWrap">
+										<img src="images/{{Chair4-Image}}"><br>											
+										{{#if Chair4-Name-Title-Company}} 
+											{{Chair4-Name-Title-Company}} 
+										{{/if}}
+										</div>
+									{{/if}}
+										
+									
+									<h3 style="clear:left;">Leadership Team:</h3>
+									<p>{{enhance Leadership-Team}}</p>
+								</div>
+								
+								
+							</script>
+							<script type="text/javascript">
+							var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1PKmJzZ6GxKtSDE4dtLZmIOhC3Ar927qMH0b3PgLkUZc/pubhtml';
+							
+							$(document).ready( function() {
+								Tabletop.init( { key: public_spreadsheet_url,
+												 callback: showInfo,
+												 parseNumbers: true,
+												 orderby: 'ID',
+												 reverse: true} );
+								});
+
+								function showInfo(data, tabletop) {
+								var source   = $("#cat-template").html();
+								var template = Handlebars.compile(source);
+
+								$.each( tabletop.sheets("Superclusters").all(), function(i, cat) {
+								  var html = template(cat);
+								  $("#Superclusters").append(html);
+								});
+							}    
+							
+							(function(){
+								// defines markup enhancement regex
+								var protocol = /(\b(https?|ftp):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/gim,		
+									scheme   = /(^|[^\/])(www\.[\S]+(\b|$))/gim;
+										
+								/*
+								 * plain text or existing markup, provides enhancements of plain text 
+								 * Registers a Helper method with handlebars which, given a string of
+								 * URLs, converting them to their respective anchor tag equivilents.=
+								 */
+								Handlebars.registerHelper('enhance', function(text) {
+								text = text.replace( protocol, '<a href="$1" target="_blank">$1</a>');
+								text = text.replace( scheme,   '$1<a href="http://$2" target="_blank">$2</a>' );	
+								return new Handlebars.SafeString( text );
+								});
+							}());
+							</script>
+							
+						<h3>Contact info for the SuperCluster chairs can be found <a href="https://docs.google.com/spreadsheets/d/1a697VZZElvLgYISq0ukHhLsK556HQPcdIt_IG6gTPfM/edit?usp=sharing" target="_blank">here</a>.</h3>
+					</div>
+				</div>
+			</div>
+<!--
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-12">
+
+                        <div>
+                        <p>A SuperCluster is a multi-city, multi-stakeholder collaboration organized around common project objectives and shared solutions. Committed cities/communities and partners jointly tackle shared issues – develop and deploy shares solutions to create economies of scale. Each SuperCluster produces blueprint/playbook to be used by cities and communities around the world as the foundation to build their own smart city strategies. A SuperCluster is an alliance of action clusters in the same sector, and may be joined by individual entities that do not belong to a specific action cluster.</p>
+						<hr>
+						
+						
+						<div class="row">
+							<div class="col-md-6">
+								<h2 style="margin-top:0;" id="transportation-supercluster-tsc">Transportation SuperCluster (TSC)</h2>
+							</div>
+							<div class="col-md-6">
+								<button><a href="/GCTC/uploads/blueprints/20170822-TransportationBlueprint.pdf" target="_blank">Download The Blueprint</a></button>
+							</div>
+						</div>
+
+<p>This supercluster was formed and is managed by forward looking municipalities interested in preparing their infrastructure for new technologies that look set to provide better, more equitable services at lower cost. It explores the opportunities provided by first and last mile vehicles including shared, low speed and autonomous. It explores the opportunities for building vibrant communities around transfer points and mobility hubs and it addresses how these vehicles and hubs can play a role in the last mile delivery of packages and other freight. To support these opportunities the supercluster works with teams developing new and advanced transportation models and environmental sensors that allow both the prediction of probable outcomes and the measurement of actual outcomes of introducing these technologies. Finally, the supercluster works with teams implementing a smart citySDK to ensure the portability and interchangeability of solutions and propose regulatory and policy changes that support the safe deployment of these technologies.</p>
+
+
+
+<h3 id="co-chairs">Co-Chairs:</h3>
+
+<p><strong>Wilfred Pinfold, CEO, Urban Systems</strong></p>
+
+<p><img src="/GCTC/uploads/2017/04/19/Wilfred_Pinfold.png" alt="" /></p>
+
+<p><strong>Skip Newberry, President and CEO, Technology Associates of Oregon</strong></p>
+
+<p><img src="/GCTC/uploads/2017/04/19/skip_newberry.jpeg" alt="" /></p>
+
+<h3 id="leadership-team">Leadership Team:</h3>
+
+<p>City of Portland OR, City of Columbus OH, Technology Associates of Oregon, Urban.Systems Inc., Baltimore Electric Vehicle Initiative, IsoftStone North America, Pacific Northwest National Laboratory, Portland State University, Ohio State University, Ubiwhere</p>
+<hr>
+
+
+<div class="row">
+	<div class="col-md-6">
+		<h2 style="margin-top:0;" id="city-platform-dashboard-supercluster-cpsc">City Platform/Dashboard SuperCluster (CPSC)</h2>
+	</div>
+	<div class="col-md-6">
+		<button><a href="/GCTC/uploads/blueprints/20170824-City-Platform-Supercluster-Report-FINAL.pdf" target="_blank">Download The Blueprint</a></button>
+	</div>
+</div>
+
+
+<p>The cities of Kansas City, Missouri and Bellevue, Washington are teaming with 20 other cities and several corporate partners including Cisco and XAQT to lead the GCTC City Platform Supercluster. We believe that the heart of a Smart City is data. We believe that technology can make a city cool, but data (its collection, analysis and integration into a decision support platform) makes it smart.  We are seeking to discover the common set of things we all measure and understand how we can standardize that list. By agreeing on what we measure, all cities can then apply the data in a manner that allows each of us to address our unique challenges regardless of the size, governance or location of our municipality.</p>
+
+
+<h3 id="chair">Chair:</h3>
+
+<p><strong>Bob Bennett, Chief Innovation Officer, Kansas City, MO</strong></p>
+
+<p><img src="/GCTC/uploads/2017/04/19/Bob%20Bennett%203-1.jpg" alt="" /></p>
+
+<h3 id="leadership-team-1">Leadership Team:</h3>
+
+<p>Kansas City MO, City of Bellevue WA, KC Digital Drive, ThinkBig Partners, Cisco, XAQT</p>
+
+<hr>
+
+
+<div class="row">
+	<div class="col-md-6">
+		<h2 style="margin-top:0;" id="public-safety-supercluster-pssc">Public Safety SuperCluster (PSSC)</h2>
+	</div>
+	<div class="col-md-6">
+		<button><a href="/GCTC/uploads/blueprints/20170824-PSSC_Blueprint_20170823_FINAL.pdf" target="_blank">Download The Blueprint</a></button>
+	</div>
+</div>
+
+<p>The Public Safety SuperCluster (PSSC) of the Global City Teams Challenge is a public-private partnership dedicated to identifying technologies, processes and strategies from among GCTC members to enhance public safety and resilience within smart connected communities, and improve the preparedness, response and recovery of modern society from the complex challenges, hazards and risks that threaten local and regional stability. The broad goal of the PSSC is to develop, integrate and pilot technology applications and test new operating procedures and employment methods in collaboration with first responders, public safety officials, and government agencies, to improve situational awareness before, during, and after an incident or civil emergency in order to protect human life, maintain community functions and infrastructure, and ensure public safety.  Moreover, the PSSC aims to improve policies and procedures for integration of advanced communications methods and decision systems to enhance interagency planning and coordination of resources within smart and connected communities. The PSSC focuses specific attention on the integration of current and future Internet of Things (IoT) technologies to build resilience and sustainability into the technology ecosystem that comprises smart, connected communities.  The PSSC was launched in 2016 by GCTC member communities engaged in developing public-safety focused technologies, and is currently open to membership by all communities, private sector enterprises, non-governmental organizations, and government agencies (at all levels), who share an interest in addressing current and future challenges in public safety, disaster preparedness, and community resilience through the development and integration of advanced technologies.</p>
+
+<h3 id="chair-1">Chair:</h3>
+
+<p><strong>Michael Dunaway, Director, NIMSAT, Informatics Research Institute (IRI), University of Louisiana at Lafayette</strong></p>
+
+<p><img src="/GCTC/uploads/2017/04/19/Michael%20Dunaway.jpg" alt="" /></p>
+
+<h3 id="leadership-team-2">Leadership Team:</h3>
+
+<p>Washington DC, New York City, NY, Austin, TX, University of Louisiana at Lafayette , George Mason University, Mimocloud, IDC, Everbridge, Cisco, New Urban Informatics, Dean Skidmore</p>
+
+<hr>
+
+
+<div class="row">
+	<div class="col-md-6">
+		<h2 style="margin-top:0;" id="energy-water-waste-management-supercluster-ewsc">Energy/Water/Waste Management SuperCluster (EWSC)</h2>
+	</div>
+	<div class="col-md-6">
+		<button><a href="/GCTC/uploads/blueprints/energy-water-waste-management-blueprint.pdf" target="_blank">Download The Blueprint</a></button>
+	</div>
+</div>
+
+<p>The GCTC Utility SuperCluster purpose is to address leading sustainability issues in cities for Energy, Water and Waste by bringing cities and counties together in the United States and around the world with academia and technology partners to demonstrate real world class examples and best practices. The SuperCluster is managed in three groups with each group managed with its own working group chair. Each Energy, Water and Waste working group is responsible for managing active projects with a common goal to develop a common blueprint.  The blueprint will represent best practices and serve as a practical guide for the implementation IoT technologies/</p>
+
+
+<p>Objectives for the Utility SuperCluster include:</p>
+
+<ul>
+<li><p>Reduce water lost through leaks in water transmission and distribution utility infrastructure</p></li>
+
+<li><p>Increase water revenues with new and innovative metering technologies</p></li>
+
+<li><p>Increase water conservation adoption with weather analytics bases solutions</p></li>
+
+<li><p>Address city resilience needs with a focus on energy</p></li>
+
+<li><p>Develop and implement new strategies for zero waste</p></li>
+
+<li><p>Make it easy for cities to have access to public private partners funding models and government grant information</p></li>
+</ul>
+
+<h3 id="chair-2">Chair:</h3>
+
+<p><strong>Kreg Christoff, Vice President, Motorola Solutions</strong></p>
+
+<p><img src="/GCTC/uploads/2017/04/19/Kreg_Christoff.jpg" alt="Kreg Christoff" /></p>
+
+<h3 id="leadership-team-3">Leadership Team:</h3>
+
+<p>City of Atlanta GA, Gwinnett County, GA, City of San Leandro CA, Motorola Solutions, CH2M, PilotCity, Scalable Strategies</p>
+<hr>
+
+
+<div class="row">
+	<div class="col-md-6">
+		<h2 style="margin-top:0;" id="public-wifi-supercluster-pwsc">Wireless SuperCluster (WSC)</h2>
+	</div>
+	<div class="col-md-6">
+		<button><a href="/GCTC/uploads/blueprints/20170823-GCTC-PWSC-Public-WIFI-Blueprint-FINAL-v2.pdf" target="_blank">Download The Blueprint</a></button>
+	</div>
+</div>
+
+<p>The GCTC Wireless SuperCluster is focused on development of best practices for the deployment of wireless systems. Wireless networks can be a tool for economic development, a lever for tackling the digital divide and homework gap, as a core infrastructure in IoT networks, and supporting smart city applications such as public safety, energy, lighting, transportation, and more.</p>
+<p>The success or failure of wireless network deployments often hinges on a variety of factors and tradeoffs between public policy, physics, and economics. As a result, many municipalities have struggled to deploy and sustain these systems. The Wireless SuperCluster will address these issues by focusing annually on vertical segments within the wider wireless ecosystem, conduct analysis aimed at uncovering the best practices for successful deployments, and producing blueprints based upon that informed analysis. These analyses will be conducted in the form of interviews, workshops, and reviewed case studies. Our current roadmap for the Wireless SuperCluster is:</p>
+<ul>
+	<li>2017: Public Wi-Fi (Completed - <a href="/GCTC/uploads/blueprints/20170823-GCTC-PWSC-Public-WIFI-Blueprint-FINAL-v2.pdf" target="_blank">Download The Blueprint</a>)</li>
+	<li>2018: Internet of Things</li>
+	<li>2019: Wireless Fiber Alternatives</li>
+	<li>2020: 5G</li>
+</ul>
+
+<h3 id="co-chairs-1">Co-chairs:</h3>
+
+<p><strong>David Witkowski, Executive Director, Wireless Communications Initiative, Joint Venture Silicon Valley</strong></p>
+
+<p><img src="/GCTC/uploads/2017/04/19/David%20Witkowski_Jacket_1920_1920-1.jpg" alt="" /></p>
+
+<p><strong>Jon Walton, Chief Information Officer, San Mateo County, CA</strong></p>
+
+<p><img src="/GCTC/uploads/2017/04/19/JonWalton%20Image-2.jpeg" alt="" /></p>
+
+<p><strong>Tony Batalla, IT Manager/Director, City of San Leandro, CA</strong></p>
+
+<p><img src="/GCTC/uploads/2017/04/19/Tony_Battala.jpg" alt="" /></p>
+
+<h3 id="leadership-team-4">Leadership Team:</h3>
+
+<p>County of San Mateo CA, City of San Leandro CA, City of Schenectady NY, Joint Venture Silicon Valley, Ruckus Wireless, Oku Solutions LLC, Smart Connections LLC, Strategy of Things, National Telecommunications and Information Administration</p>
+<hr>
+
+<div class="row">
+	<div class="col-md-7">
+		<h2 style="margin-top:0;" id="data-governance-exchange">Data Governance and Exchange SuperCluster (DGSC)</h2>
+	</div>	
+</div>
+<p>Data governance and exchange is one of the primary challenges to the deployment of smart cities technologies today. The data governance challenge has two main components. Many cities have successfully implemented data management and open data solutions for public data. But, there is not yet developed a comprehensive strategy for handling all of the data from thousands of IoT sensors available now and envisioned for the future. Cities are interested in IoT technology as a way to improve operations and the delivery of services.  What is a standard, but flexible and customizable framework that will allow cities to use and exchange IoT data for public value while protecting public privacy and trust? GCTC’s Data governance and exchange SuperCluster aims to address the challenge of building a governance and exchange model for IoT data and a plan for governments to successfully customize and deploy it. The group will work to collect best practices and produce blueprints for data exchange and governance, as well as deployed proofs to share with other teams and stakeholders.</p>
+	
+	<h3>Co-chairs:</h3>
+	<p>To Be Elected by the Leadership Team</p>
+	<h3>Leadership Team:</h3>
+	<p>City of Kansas City MO, Rockefeller Foundation, Aspenworks, Ltd, Center for Innovative Technology, City Innovate Foundation, Skayl, University of California-Davis</p>
+
+<hr>
+
+<div class="row">
+	<div class="col-md-6">
+		<h2 style="margin-top:0;" id="agriculture-and-rural">Agriculture and Rural SuperCluster (ARSC)</h2>
+	</div>	
+</div>
+<p>The goals of the SuperCluster will be to develop projects, best practices and a blueprint to assist farmers manage their farms and make their land and animals more productive and healthier while making it easier to meet federal and state reporting requirements. For rural communities, the SuperCluster will focus on projects and best practices for bridging the digital divide and closing the homework gap, improving healthcare and the ability to age in place and improving economic development and spurring innovation.</p>
+	
+	<h3>Co-chairs:</h3>
+	<p>To Be Elected by the Leadership Team</p>
+	<h3>Leadership Team:</h3>
+	<p>Rural Development Council, State of PA Dept. of Agriculture, The Rural Broadband Association, Joint Venture Silicon Valley, Georgia Tech, Texas Tech University, University of California, Agriculture and Natural Resources, John Deere, NTIA</p>
+
+<hr>
+<h3>Contact info for the SuperCluster chairs can be found <a href="https://docs.google.com/spreadsheets/d/1a697VZZElvLgYISq0ukHhLsK556HQPcdIt_IG6gTPfM/edit?usp=sharing">here</a>.</h3>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                
+
+            </div>
+            
+-->
+            
+        </div>
+        
+
+        <footer id="footer">
+
+</footer>
+
+
+<div>
+<p style="color:#777;font-size:12px;line-height:110%;padding-top:20px;padding-left:50px;padding-right:50px;padding-bottom:10px;">
+PLEASE NOTE: This is a collaborative website. NIST does not endorse the views expressed, or necessarily concur with the information presented on these sites. Further, NIST does not endorse any commercial products that may be mentioned on these sites. All the material on this website is in the public domain and is intended for unrestricted use by interested parties, including any text, diagrams, or images, unless indicated explicitly.
+<br><br>Don't share anything on this site that you do not want to be public. Do not post any proprietary documents, information or data Anything placed on this site is considered public disclosure and it shall be deemed to have been disclosed on a non-confidential basis, without any restrictions on use by anyone, except that no valid copyright or patent right shall be deemed to have been waived by such disclosure. 
+<br><br>Certain commercial equipment, instruments, materials, systems, software, and trade names may be identified throughout this site in order to specify or identify technologies adequately. Such identification is not intended to imply recommendation or endorsement by NIST or any other party, nor is it intended to imply that the systems or products identified are necessarily the best available for the purpose. All data and other information posted on this site is provided as a public service and is provided "AS IS."  NIST MAKES NO WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR STATUTORY, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT AND DATA ACCURACY.  
+<br><br>By selecting external links, you will be leaving NIST webspace. Links to other websites are provided because they may have information that would be of interest to you. No inferences should be drawn on account of other sites being referenced, or not, from this page. There may be other websites that are more appropriate for your purpose.
+<br><a href="http://www.nist.gov/public_affairs/privacy.cfm#privpolicy">Privacy Policy</a> | <a href="http://www.nist.gov/public_affairs/privacy.cfm#secnot">Security Notice</a> | <a href="http://www.nist.gov/public_affairs/privacy.cfm#accesstate">Accessibility Statement</a> | <a href="mailto:sgwikisupport@nist.gov?subject=Feedback%20on%20NistPagesTemplate%20Web%20Site">Send feedback</a>
+
+</p>
+</div>
+
+    </div>
+    
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-98010590-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+
+  </body>
+</html>
