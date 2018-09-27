@@ -110,7 +110,7 @@
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                       
-                        <li><a href="/GCTC/event/gctc-expo-2017">GCTC EXPO 2017</a></li><li><a href="/GCTC/event/gctc-kickoff-2018">GCTC Kickoff 2018</a></li>
+                        <li><a href="/GCTC/event/gctc-expo-2019">GCTC Expo 2019</a></li><li><a href="/GCTC/event/gctc-kickoff-2018">GCTC Kickoff 2018</a></li><li><a href="/GCTC/event/gctc-expo-2017">GCTC EXPO 2017</a></li>
                       
                     </ul>
                     
@@ -132,49 +132,16 @@
 <li class="dropdown"><a href="/GCTC/news/">News</a> </li>
                   
                 </ul>
-				<ul id="expoNav" class="nav navbar-nav navbar-right" style="clear:both;">
-                  <li class="dropdown">
-                    
-                    <a href="/GCTC/event/gctc-kickoff-2018/">Event Home</a>
-                    
-                  </li>
-                  <li class="dropdown">
-                    
-                    <a href="/GCTC/event/gctc-kickoff-2018/agenda">Agenda</a>
-                    
-                  </li>
-                  
-                  <li class="dropdown">
-                    
-                    <a href="/GCTC/event/gctc-kickoff-2018/speakers">Speakers</a>
-                    
-                  </li>
-                  
-                  <li class="dropdown">
-                    
-                    <a href="/GCTC/event/gctc-kickoff-2018/teams">Teams</a>
-                    
-                  </li>
-                  
-                  <li class="dropdown">
-                    
-                    <a href="/GCTC/event/gctc-kickoff-2018/logistics">Logistics</a>
-                    
-                  </li>
-                  
-                  <li class="dropdown">
-                    
-                    <a href="/GCTC/event/gctc-kickoff-2018/index.html#cta">Registration</a>
-                    
-                  </li>
-                  
-                  <li class="dropdown">
-                    
-                    <a href="/GCTC/event/gctc-kickoff-2018/press">Press</a>
-                    
-                  </li>
-                  
-                </ul>
+				<ul id="expoNav" class="nav navbar-nav navbar-right" style="clear:both;">                  
+                    <li class="dropdown"><a href="/GCTC/event/gctc-expo-2019/">Event Home</a></li>				  
+                    <li class="dropdown"><a href="/GCTC/event/gctc-expo-2019/agenda">Agenda</a></li>
+                    <li class="dropdown"><a href="/GCTC/event/gctc-expo-2019/speakers">Speakers</a></li>
+                    <li class="dropdown"><a href="/GCTC/event/gctc-expo-2019/exhibit">Exhibits</a></li>
+                    <li class="dropdown"><a href="/GCTC/event/gctc-expo-2019/teams">Teams</a></li>                  
+                    <li class="dropdown"><a href="/GCTC/event/gctc-expo-2019/logistics">Logistics</a></li>
+                    <li class="dropdown"><a href="/GCTC/event/gctc-expo-2019/index.html#cta">Registration</a></li>
+                    <li class="dropdown"><a href="/GCTC/event/gctc-expo-2019/press">Press</a></li>                  
+                  </ul>
             </div>
             
 
@@ -238,7 +205,8 @@
 							</div>
 						</script>
 						<script type="text/javascript">
-						var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1QZycMk96Dp2mSdexAQXeb-lvqCiEcwHL3SgKQK_Df6U/pubhtml';
+                        //var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1QZycMk96Dp2mSdexAQXeb-lvqCiEcwHL3SgKQK_Df6U/pubhtml';
+                        var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1UwN30VBwYZELK6xF4mWiGDkX1O6Hs5qwgn1r_b6ZwQo/pubhtml';
 						
 						$(document).ready( function() {
 							Tabletop.init( { key: public_spreadsheet_url,
@@ -253,7 +221,13 @@
 							$.each( tabletop.sheets("Logistics").all(), function(i, cat) {
 							  var html = template(cat);
 							  $("#Logistics").append(html);
-							});
+                            });
+                            
+                            str = $('div#Logistics').text();
+                            if($.trim(str) === "") {
+                                $('div#Logistics').html("<h2>Coming Soon</h2>");
+                                
+                            }
 						}    
 						</script>
 

@@ -117,7 +117,7 @@
 	 .cards tbody td {width: 86vw;}
 	}
 	
-	#btnTransportation {background:url(../../../images/transportation-icon-071217.png) no-repeat 50% 0;}
+/* #btnTransportation {background:url(../../../images/transportation-icon-071217.png) no-repeat 50% 0;}
 #btnPublichHealth {background:url(../../../images/Public-health-icon-071217.png) no-repeat 50% 0;}
 #btnEnergyWater {background:url(../../../images/energy-environment-icon-071217.png) no-repeat 50% 0;}
 #btnInfrasctructure{background:url(../../../images/city-data-platform-icon-071717.png) no-repeat 50% 0;}
@@ -142,7 +142,7 @@
     text-align: center;
 }
 
-
+*/
 
 
 @media (max-width: 1024px) {
@@ -245,7 +245,7 @@
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                       
-                        <li><a href="/GCTC/event/gctc-expo-2017">GCTC EXPO 2017</a></li><li><a href="/GCTC/event/gctc-kickoff-2018">GCTC Kickoff 2018</a></li>
+                        <li><a href="/GCTC/event/gctc-expo-2019">GCTC Expo 2019</a></li><li><a href="/GCTC/event/gctc-kickoff-2018">GCTC Kickoff 2018</a></li><li><a href="/GCTC/event/gctc-expo-2017">GCTC EXPO 2017</a></li>
                       
                     </ul>
                     
@@ -267,51 +267,16 @@
 <li class="dropdown"><a href="/GCTC/news/">News</a> </li>
                   
                 </ul>
-				<ul id="expoNav" class="nav navbar-nav navbar-right" style="clear:both;">
-                  
-				  <li class="dropdown">
-                    
-                    <a href="/GCTC/event/gctc-kickoff-2018/">Event Home</a>
-                    
-                  </li>
-				  
-                  <li class="dropdown">
-                    
-                    <a href="/GCTC/event/gctc-kickoff-2018/agenda">Agenda</a>
-                    
-                  </li>
-                  
-                  <li class="dropdown">
-                    
-                    <a href="/GCTC/event/gctc-kickoff-2018/speakers">Speakers</a>
-                    
-                  </li>
-                  
-                  <li class="dropdown">
-                    
-                    <a href="/GCTC/event/gctc-kickoff-2018/teams">Teams</a>
-                    
-                  </li>
-                  
-                  <li class="dropdown">
-                    
-                    <a href="/GCTC/event/gctc-kickoff-2018/logistics">Logistics</a>
-                    
-                  </li>
-                  
-                  <li class="dropdown">
-                    
-                    <a href="/GCTC/event/gctc-kickoff-2018/index.html#cta">Registration</a>
-                    
-                  </li>
-                  
-                  <li class="dropdown">
-                    
-                    <a href="/GCTC/event/gctc-kickoff-2018/press">Press</a>
-                    
-                  </li>
-                  
-                </ul>
+				<ul id="expoNav" class="nav navbar-nav navbar-right" style="clear:both;">                  
+                    <li class="dropdown"><a href="/GCTC/event/gctc-expo-2019/">Event Home</a></li>				  
+                    <li class="dropdown"><a href="/GCTC/event/gctc-expo-2019/agenda">Agenda</a></li>
+                    <li class="dropdown"><a href="/GCTC/event/gctc-expo-2019/speakers">Speakers</a></li>
+                    <li class="dropdown"><a href="/GCTC/event/gctc-expo-2019/exhibit">Exhibits</a></li>
+                    <li class="dropdown"><a href="/GCTC/event/gctc-expo-2019/teams">Teams</a></li>                  
+                    <li class="dropdown"><a href="/GCTC/event/gctc-expo-2019/logistics">Logistics</a></li>
+                    <li class="dropdown"><a href="/GCTC/event/gctc-expo-2019/index.html#cta">Registration</a></li>
+                    <li class="dropdown"><a href="/GCTC/event/gctc-expo-2019/press">Press</a></li>                  
+                  </ul>
             </div>
             
 
@@ -361,7 +326,7 @@
                 <div class="row">
 
                     <div class="col-md-12">
-						
+						<!--
                         <div>
                           <p>Exhibitors - Please contact Gale Guerrieri at <a href="mailto:meetingsguru@gmail.com">meetingsguru@gmail.com</a> for questions related to exhibitor requirements and packages.</p>
 						  
@@ -370,10 +335,11 @@
 						<div style="margin-bottom:30px;">
 							<button id="btnTransportation">Transportation</button>
 							<button id="btnPublichHealth">Public Safety</button>
-							<button id="btnEnergyWater">Energy, Water, &amp; Environment</button>
-							<button id="btnInfrasctructure">City Data Platform/Dashboard</button>
-							<button id="btnDataTech">Public Wi-Fi/Broadband</button>
-							<button id="btnUrban">Other</button>							
+							<button id="btnUtility">Utility</button>
+							<button id="btnData">Data</button>
+							<button id="btnWireless">Wireless</button>
+							<button id="btnAgr">Agriculture and Rural</button>
+							<button id="btnEducation">Education</button>
 						</div>
 
 						
@@ -384,6 +350,7 @@
 						
 						<h2 id="sectorHead">All Sectors <span> </span></h2>
 						<button type="button" id="showAll">Show All</button>
+						-->
 						
 						<table id="searchable-table" cellpadding="5" cellspacing="0" border="0" width="100%"  class="cards">
 		<thead>
@@ -443,7 +410,8 @@
 	
 	
 	<script type="text/javascript">
-	var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1QZycMk96Dp2mSdexAQXeb-lvqCiEcwHL3SgKQK_Df6U/pubhtml';
+    //var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1QZycMk96Dp2mSdexAQXeb-lvqCiEcwHL3SgKQK_Df6U/pubhtml';
+    var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1UwN30VBwYZELK6xF4mWiGDkX1O6Hs5qwgn1r_b6ZwQo/pubhtml';
 	var templates = [
 		{
 			"templatesource": "#datatable-template",
@@ -489,9 +457,10 @@
 			dom: "Bf<'paginationWrap'irlp>",		
 			order:[[0, "asc"]],
 			oLanguage: {
-				"sLengthMenu": "_MENU_ records per page"
+				"sLengthMenu": "_MENU_ records per page",
+				"sEmptyTable": "Coming Soon"
 			},
-			iDisplayLength: 25,		
+			iDisplayLength: 100,		
 			fixedColumns: true
 			
 			
@@ -612,22 +581,26 @@ $('#btnPublichHealth').on('click', function () {
         oTable.columns(1).search("Public Safety" ).draw();
 		$("#sectorHead").html("Public Safety");
     }); 
-$('#btnEnergyWater').on('click', function () {
-        oTable.columns(1).search("Energy, Water & Environment" ).draw();
-		$("#sectorHead").html("Energy, Water & Environment");
+$('#btnUtility').on('click', function () {
+        oTable.columns(1).search("Utility" ).draw();
+		$("#sectorHead").html("Utility");
     }); 
-$('#btnInfrasctructure').on('click', function () {
-        oTable.columns(1).search("City Data Platform/Dashboard" ).draw();
-		$("#sectorHead").html("City Data Platform/Dashboard");
+$('#btnData').on('click', function () {
+        oTable.columns(1).search("Data" ).draw();
+		$("#sectorHead").html("Data");
     }); 
-$('#btnDataTech').on('click', function () {
-        oTable.columns(1).search("Public Wi-Fi/Broadband" ).draw();
-		$("#sectorHead").html("Public Wi-Fi/Broadband");
+$('#btnWireless').on('click', function () {
+        oTable.columns(1).search("Wireless" ).draw();
+		$("#sectorHead").html("Wireless");
     }); 	
-$('#btnUrban').on('click', function () {
-        oTable.columns(1).search("Other" ).draw();
-		$("#sectorHead").html("Other");
-    }); 	
+$('#btnAgr').on('click', function () {
+        oTable.columns(1).search("Agriculture and Rural" ).draw();
+		$("#sectorHead").html("Agriculture and Rural");
+	}); 
+$('#btnEducation').on('click', function () {
+        oTable.columns(1).search("Education" ).draw();
+		$("#sectorHead").html("Education");
+    }); 		
 	
 $('#showAll').click(function() {
     //oTable.search('').draw();

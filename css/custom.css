@@ -113,10 +113,11 @@ div#govListing {line-height:26px;word-spacing:8px;}
 
 .handlebars p {white-space:pre-line;}
 
-.news article .imageWrap {width:390px;height:240px;float:right;overflow:hidden;margin:0 0 20px 20px;}
-.news article img {width:390px;height:auto;}
+.news article .imageWrap {width:390px;/*height:240px;*/overflow:hidden;max-height:300px;}
+.news article img {width:390px;height:auto;/*object-fit: cover;object-position: center center;*/}
 .news article:after {content:"";clear:both;display:block;}
-.news article {border-bottom:1px solid #eeeeee;}
+.news article {border-bottom:1px solid #eeeeee;padding:20px 0;}
+.news .caption {font-size: 13px; text-align: center;}
 
 
 @media (max-width: 1024px) {

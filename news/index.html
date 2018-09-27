@@ -109,7 +109,7 @@
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                       
-                        <li><a href="/GCTC/event/gctc-expo-2017">GCTC EXPO 2017</a></li><li><a href="/GCTC/event/gctc-kickoff-2018">GCTC Kickoff 2018</a></li>
+                        <li><a href="/GCTC/event/gctc-expo-2019">GCTC Expo 2019</a></li><li><a href="/GCTC/event/gctc-kickoff-2018">GCTC Kickoff 2018</a></li><li><a href="/GCTC/event/gctc-expo-2017">GCTC EXPO 2017</a></li>
                       
                     </ul>
                     
@@ -179,10 +179,18 @@
 					<div id="News" class="handlebars"></div>
                         <script id="cat-template" type="text/x-handlebars-template">
 							<article>
-								<div class="imageWrap"><img alt="{{Image-Alt-Text}}" src="../images/news/{{Image}}"></div>
-								<br>{{Image-Caption}}
-								<h2><a href="{{Title-URL}}">{{Title}}</a></h2>								
-								<p>{{Blurb}}</p>								
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h2><a href="{{Title-URL}}">{{Title}}</a></h2>
+                                        <p>{{Blurb}}</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="imageWrap"><img alt="{{Image-Alt-Text}}" src="../images/news/{{Image}}"></div>
+                                        <p class="caption">{{Image-Caption}}</p>
+                                    </div>
+                                </div>
+								
+								
 							</article>
 						</script>
 						<script type="text/javascript">
