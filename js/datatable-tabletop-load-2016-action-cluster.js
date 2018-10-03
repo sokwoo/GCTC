@@ -169,7 +169,8 @@ function loadToDOM(tabletop_data, tabletop) {
 	// Close each statement
     }, this);
 
-    loadDataTable();
+	loadDataTable();
+	$(".loader").hide();
 }
 
 

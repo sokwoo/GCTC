@@ -107,7 +107,7 @@
                   
                   <li class="dropdown">
                     
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events <span class="caret"></span></a>
+                      <a href="/GCTC/event">Events</a>
                     <ul class="dropdown-menu">
                       
                         <li><a href="/GCTC/event/gctc-expo-2019">GCTC Expo 2019</a></li><li><a href="/GCTC/event/gctc-kickoff-2018">GCTC Kickoff 2018</a></li><li><a href="/GCTC/event/gctc-expo-2017">GCTC EXPO 2017</a></li>
@@ -225,7 +225,7 @@
                 <div class="row">
 
                     <div class="col-md-12">
-						<div id="Logistics" class="handlebars"></div>
+						<div id="Logistics" class="handlebars"><div class="loader">Loading...</div></div>
                         <script id="cat-template" type="text/x-handlebars-template">
 							<div>
 								<p>{{Header}}</p>
@@ -253,7 +253,8 @@
 
 							$.each( tabletop.sheets("Logistics").all(), function(i, cat) {
 							  var html = template(cat);
-							  $("#Logistics").append(html);
+                              $("#Logistics").append(html);
+                              $(".loader").hide();
 							});
 						}    
 						</script>

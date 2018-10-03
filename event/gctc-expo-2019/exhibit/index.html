@@ -249,7 +249,7 @@
                   
                   <li class="dropdown">
                     
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events <span class="caret"></span></a>
+                      <a href="/GCTC/event">Events</a>
                     <ul class="dropdown-menu">
                       
                         <li><a href="/GCTC/event/gctc-expo-2019">GCTC Expo 2019</a></li><li><a href="/GCTC/event/gctc-kickoff-2018">GCTC Kickoff 2018</a></li><li><a href="/GCTC/event/gctc-expo-2017">GCTC EXPO 2017</a></li>
@@ -361,40 +361,40 @@
 						
 						
 						<table id="searchable-table" cellpadding="5" cellspacing="0" border="0" width="100%"  class="cards">
-		<thead>
-			<tr>
-				<th>ID</th>
-				<th class="Sector">Sector</th>				
-				<th class="ActionCluster">Action Cluster</th>				
-				<th class="Year">Year</th>
-				<th class="MuniGov">Municipal Governments</th>
-				<th class="Members">Members</th>
-				<th class="TeamLead">Team Lead Name</th>
-				<th class="Description">Description</th>
-				<th class="Website">External Website</th>
-				<th class="Booth">Booth Number</th>
-				
-				
-			</tr>
-		</thead>
-		<tbody id="content">
-		</tbody>
-		<tfoot id="selectColumns">
-			<tr>
-				<th></th>
-				<th></th>
-				<th></th>
-				<th></th>
-				<th></th>
-				<th></th>
-				<th></th>
-				<th></th>
-				<th></th>
-				<th></th>
-				
-			</tr>
-		</tfoot>
-	</table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th class="Sector">Sector</th>				
+                                    <th class="ActionCluster">Action Cluster</th>				
+                                    <th class="Year">Year</th>
+                                    <th class="MuniGov">Municipal Governments</th>
+                                    <th class="Members">Members</th>
+                                    <th class="TeamLead">Team Lead Name</th>
+                                    <th class="Description">Description</th>
+                                    <th class="Website">External Website</th>
+                                    <th class="Booth">Booth Number</th>
+                                    
+                                    
+                                </tr>
+                            </thead>
+                            <tbody id="content"><div class="loader">Loading...</div>
+                            </tbody>
+                            <tfoot id="selectColumns">
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    
+                                </tr>
+                            </tfoot>
+                        </table>
 	
 		<script id="datatable-template" type="text/x-handlebars-template">
 		{{#each elements}}
@@ -493,7 +493,7 @@
 
 		loadDataTable(),
 		linkify = DataTablesLinkify(oTable);
-		
+		$(".loader").hide();
 		//function scrollToHash(hashName) { location.hash = "#" + hashName; }
 	}
 
