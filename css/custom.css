@@ -91,6 +91,7 @@ ol, ul {padding-left:25px;}
 .customBtn {font-family: 'Roboto Condensed', sans-serif;font-weight: 700;font-size:34px;color:#fff;border-radius:2px;background:url(../img/btn-icon.png) right center no-repeat #3E9FBA;padding:10px 120px 10px 40px;}
 .customBtn2 {font-family: 'Roboto Condensed', sans-serif;font-weight: 700;font-size:22px;color:#fff;border-radius:2px;background:#3E9FBA;padding:10px 60px;margin-bottom:10px;}
 .customBtn3 {font-family: 'Roboto Condensed', sans-serif;font-weight: 700;font-size:22px;color:#fff;border-radius:2px;background:#3E9FBA;padding:10px 60px;margin-bottom:10px;display:block;}
+.customBtn4 {font-family: 'Roboto Condensed', sans-serif;font-weight: 700;font-size:22px;color:#fff;border-radius:2px;background:#3E9FBA;padding:10px 60px;margin-bottom:10px;display:inline-block;}
 
 .table {overflow-x:scroll; table-layout: fixed;}
 td {
