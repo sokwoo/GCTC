@@ -194,12 +194,12 @@
 						<div id="Press" class="handlebars"><div class="loader">Loading...</div></div>
                         <script id="cat-template" type="text/x-handlebars-template">
 							<div>
-								<h2>{{Header}}</h2>
-								<p>{{enhance Body}}</p>
+								<h2>{{{Header}}}</h2>
+								<p>{{{Body}}}</p>
 							</div>							
 							<div>
 								<hr>
-								<p>{{Footer}}</p>								
+								<p>{{{Footer}}}</p>								
 							</div>
 						</script>
 						<script type="text/javascript">
@@ -221,7 +221,7 @@
                               $("#Press").append(html);
                               $(".loader").hide();
 							});
-							
+							/*
 							$("#Press").filter(function () {
 							var html = $(this).html();
 							var emailPattern = /[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}/g;  
@@ -236,6 +236,8 @@
 							  return $(this)
 								}    
                             });
+                            */
+
                             /*
                             str = $('div#Press').text();
                             if($.trim(str) === "") {
